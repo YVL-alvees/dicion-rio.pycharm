@@ -1,0 +1,8 @@
+# Função para o dicionário
+album_store = {
+    "produto1": {"nome": "Hardstone_Psycho", "preço": 20, "quantidade": 50},
+    "produto2": {"nome": "A_Great_Chaos", "preço": 25, "quantidade": 65},
+    "produto3": {"nome": "Love_Lasts_Forever", "preço": 15, "quantidade": 100},
+    "produto4": {"nome": "Utopia", "preço": 45, "quantidade": 250},
+    "produto5": {"nome": "I_Am_Music", "preço": 35, "quantidade": 75}
+}
