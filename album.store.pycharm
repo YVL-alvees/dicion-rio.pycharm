@@ -14,3 +14,7 @@ def remover_item(album_store, produto):
         print(f"'{produto}' foi removido com sucesso!")
     else:
         print(f"'{produto}' não encontrado na loja!")
+
+# Função para calcular o número total de itens
+def calcular_numero_itens(album_store):
+    return len(album_store)
