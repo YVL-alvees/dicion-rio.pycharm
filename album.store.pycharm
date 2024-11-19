@@ -6,3 +6,11 @@ album_store = {
     "produto4": {"nome": "Utopia", "preço": 45, "quantidade": 250},
     "produto5": {"nome": "I_Am_Music", "preço": 35, "quantidade": 75}
 }
+
+# Função para remover um item do dicionário
+def remover_item(album_store, produto):
+    if produto in album_store:
+        del album_store[produto]
+        print(f"'{produto}' foi removido com sucesso!")
+    else:
+        print(f"'{produto}' não encontrado na loja!")
