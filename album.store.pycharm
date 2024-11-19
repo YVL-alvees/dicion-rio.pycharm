@@ -18,3 +18,8 @@ def remover_item(album_store, produto):
 # Função para calcular o número total de itens
 def calcular_numero_itens(album_store):
     return len(album_store)
+
+# Função para criar um novo item com listas dentro do dicionário
+def criar_item(album_store, chave, nome, preco, quantidade):
+    album_store[chave] = {"nome": nome, "preço": preco, "quantidade": quantidade}
+    print(f"Item '{nome}' foi adicionado com sucesso!")
