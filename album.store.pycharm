@@ -28,3 +28,18 @@ def criar_item(album_store, chave, nome, preco, quantidade):
 def calcular_valor_total(album_store):
     valor_total = sum(produto["preço"] * produto["quantidade"] for produto in album_store.values())
     return valor_total
+
+# Testando as funções
+print("Número inicial de itens:", calcular_numero_itens(album_store))
+
+remover_item(album_store, "produto3")  # Remove o produto3
+print("Número após remoção:", calcular_numero_itens(album_store))
+
+criar_item(album_store, "produto6", "New_Album", 50, 30)  # Adiciona um novo item
+print("Número após adição:", calcular_numero_itens(album_store))
+
+valor_total = calcular_valor_total(album_store)
+print("Valor total em estoque:", valor_total)
+
+# Mostrando o estado final do dicionário
+print("Estado final do estoque:", album_store)
