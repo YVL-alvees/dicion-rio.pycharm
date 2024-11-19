@@ -23,3 +23,8 @@ def calcular_numero_itens(album_store):
 def criar_item(album_store, chave, nome, preco, quantidade):
     album_store[chave] = {"nome": nome, "preço": preco, "quantidade": quantidade}
     print(f"Item '{nome}' foi adicionado com sucesso!")
+
+# Função para calcular o valor total em estoque
+def calcular_valor_total(album_store):
+    valor_total = sum(produto["preço"] * produto["quantidade"] for produto in album_store.values())
+    return valor_total
