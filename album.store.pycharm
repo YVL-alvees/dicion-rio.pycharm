@@ -50,5 +50,15 @@ def gerar_uuid1():
     return uuid.uuid1()
 
 # Testando a função
+
+import uuid
+
+def gerar_uuid4():
+    return uuid.uuid4()
+
+# Testando a função
+uuid4 = gerar_uuid4()
+print("UUID4 gerado:", uuid4)
+
 uuid1 = gerar_uuid1()
 print("UUID1 gerado:", uuid1)
