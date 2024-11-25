@@ -43,3 +43,12 @@ print("Valor total em estoque:", valor_total)
 
 # Mostrando o estado final do dicionário
 print("Estado final do estoque:", album_store)
+
+import uuid
+
+def gerar_uuid1():
+    return uuid.uuid1()
+
+# Testando a função
+uuid1 = gerar_uuid1()
+print("UUID1 gerado:", uuid1)
